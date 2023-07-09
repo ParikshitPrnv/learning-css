@@ -1,0 +1,138 @@
+/*  use camel cases for naming as css is case-insensitive */
+
+*{
+    box-sizing: border-box;
+    /* box-sizing is not inherited as the children are block level element. so, we make it universal */
+}
+body{
+    margin: 0px;
+}
+
+#product-overview {
+    background: url("freedom.jpg");
+    padding: 10px;
+    height: 500px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+h1{
+    font-family: sans-serif;
+}
+
+.section-title {
+    color: #0e4f1f;
+}
+
+/* 
+selectors:
+    -   html tags   h1{}
+    -   class selectors .class-name{}
+    -   id selectors    #id-name{}
+    -   attribute selectors [src]
+*/
+
+/* 
+specificity order:
+    inline
+    id
+    class, pseudo-class, attribute
+    html tag & pseudo elements 
+*/
+
+
+
+#plans{ 
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.plan{
+    display: inline-block;
+    background: #d5ffdc;
+    margin: 8px;
+    padding: 16px;
+    width: 30%;
+    vertical-align: middle;
+}
+
+
+
+.plan-highlighted{
+    color: white;
+    background: #175c29;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan-annotations{
+    color: #175c29;
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(95, 181, 86, 0.5);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.plan-title{
+    color: #175c29;
+}
+
+.plan-price{
+    color: #570b0b;
+    
+}
+
+.plan-highlighted .plan-title{
+    color: white;
+}
+
+.plan-highlighted .plan-price{
+    color: #22ce18;
+}
+
+.plan-features{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.plan-feature{
+    margin: 8px 0px;
+}
+
+
+
+.good-reasons-section{
+    text-align: center;
+    background: #e65263;
+    color: white;
+    margin-top: 80px;
+    padding: 16px 0px;
+}
+
+.good-reasons-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.good-reason{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.good-reason-image{
+    background: #ffcede;
+    width: 128px;
+    /* align-items: center; */
+    border: 2px #424242 solid;
+    border-radius: 50%;
+    height: 128px;
+    margin: auto;
+}

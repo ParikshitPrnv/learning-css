@@ -1,0 +1,130 @@
+/*  use camel cases for naming as css is case-insensitive */
+/* Universal Styling */
+*{
+    box-sizing: border-box;
+    /* box-sizing is not inherited as the children are block level element. so, we make it universal */
+}
+
+body{
+    margin: 0px;
+}
+
+/* Shared Nav */
+.top-header{
+    background: #2ddf5c;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-items{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.main-nav{
+    display: inline-block;
+    width: calc(100% - 80px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.nav-item{
+    display: inline-block;
+    margin-right: 16px;
+    font-weight: bold;
+}
+
+.logo-link{
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+li a{
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: 15px;
+    padding: 5px 0px;
+    color: #0e4f1f;
+}
+
+li a:hover, li a:active{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.nav-item-cta a{
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.nav-item-cta a:hover,
+.nav-item-cta a:active{
+    color: #ff1b68;
+    background: white;
+    border: none;
+
+}
+
+/* Shared Buttons */
+.btn{
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover,
+.btn:active{
+    cursor: pointer;
+    color: #0e4f1f;
+    background: white;
+}
+
+.btn:focus{
+    outline:    none;
+}
+
+/* Shared Footer */
+.main-footer{
+    background: black;
+    color: white;
+    padding: 32px;
+    margin: 48px 0;
+}
+
+.main-footer-nav-item{
+    display: inline-block;
+    margin: 0px 16px;
+}
+
+.main-footer-nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer-nav-item a:hover,
+.main-footer-nav-item a:active{
+    outline: none;
+    color: #ccc;
+    border: 0;
+}
+
+.main-footer-nav-items{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
