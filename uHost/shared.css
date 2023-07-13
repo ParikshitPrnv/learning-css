@@ -9,10 +9,15 @@ body{
     margin: 0px;
 }
 
+main{
+    min-height: calc(100vh - 14rem);
+    margin-top: 3.5rem;
+}
+
 /* Shared Nav */
 .top-header{
     background: #2ddf5c;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     width: 100%;
     position: fixed;
     top: 0;
@@ -43,8 +48,8 @@ body{
 }
 
 .main-nav{
-    display: inline-block;
-    width: calc(100% - 80px);
+    display: none;
+    width: calc(100% - 60px);
     text-align: right;
     vertical-align: middle;
 }
@@ -56,14 +61,12 @@ body{
 }
 
 .logo-link{
-    text-decoration: none;
-    color: #0e4f1f;
-    font-weight: bold;
-    font-size: 1.5rem;
+    /* text-decoration: none;
     height: 22px;
-    display: inline-block;
-    vertical-align: middle;
-}
+ */
+    display: none;
+} 
+
 
 .logo-link img{
     height: 100%;
@@ -89,7 +92,7 @@ li a:hover, li a:active,
 .mobile-nav__item--cta a{
     color: white;
     background: #ff1b68;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 8px;
 }
 
@@ -129,13 +132,13 @@ li a:hover, li a:active,
 .main-footer{
     background: black;
     color: white;
-    padding: 2rem;
-    margin: 3rem 0;
+    padding: 1rem;
+    margin: 1.5rem 0;
 }
 
 .main-footer-nav-item{
-    display: inline-block;
-    margin: 0px 1rem;
+    display: block;
+    margin: 1rem 0rem;
 }
 
 .main-footer-nav-item a{
@@ -152,7 +155,6 @@ li a:hover, li a:active,
 
 .main-footer-nav-items{
     list-style: none;
-    margin: 0;
     padding: 0;
     text-align: center;
 }
@@ -213,4 +215,37 @@ li a:hover, li a:active,
     margin: 0.6rem 0;
   }
   
- 
+ @media (min-width: 40rem) {
+    .toggle-button{
+        display: none;
+    }
+
+    .top-header{
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+    }
+    
+    .logo-link img{
+        height: 2.5rem;
+        display: inline-block;
+    }
+    
+    .logo-link{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    
+    li a{
+        font-weight: bold;
+        font-size: 1.15rem;
+    }
+
+    .main-nav{
+        display: inline-block;
+    }    
+    .main-footer-nav-item{
+        display: inline-block;
+        margin: 0rem 1rem;
+    }
+ }

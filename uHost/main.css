@@ -13,11 +13,11 @@ body{
     margin-top: 1.5rem;
     background: url("images/freedom.jpg");
     /* padding: 0.7rem; */
-    height: 33vh;
+    height: 50vh;
     color: white;
     position: relative;
     background-size: cover;
-    background-position: left 10% bottom 80%;
+    background-position: left 10% bottom 5%;
     background-repeat: no-repeat;
 
 }
@@ -58,26 +58,20 @@ specificity order:
 
 #plans{ 
     text-align: center;
-    width: 80%;
-    margin: auto;
-    text-align: center;
+    width: 100%;
 }
 
 .plan{
-    display: inline-block;
+    display: block;
     background: #d5ffdc;
-    margin: 0.5rem;
     padding: 1rem;
-    width: 30%;
-    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 1rem;
 }
-
-
 
 .plan-highlighted{
     color: white;
     background: #175c29;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan-annotations{
@@ -133,10 +127,10 @@ specificity order:
 }
 
 .good-reason{
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+    display: block;
+    margin: auto
 }
+
 
 .good-reason-image{
     background: #ffcede;
@@ -147,7 +141,7 @@ specificity order:
     height: 128px;
     margin: auto;
     padding: 10%;
-}
+} 
 
 
 /* Model css */
@@ -200,4 +194,55 @@ specificity order:
     border-color: #ff5454;
   }
 
-  
+.open{
+    display: block;
+}
+
+  /* go to mydevice.io to get the breaking points */
+
+  @media (min-width: 30rem){
+    #product-overview > h1{
+        font-size:2rem;
+    }
+    
+    #product-overview {
+        height: 70vh;
+        background-position: left 10% bottom 50%;
+    
+    }
+
+    #plans{ 
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .plan{
+        display: inline-block;
+        background: #d5ffdc;
+        margin: 0.5rem;
+        padding: 1rem;
+        width: 25%;
+        vertical-align: middle;
+        min-width: 12rem;
+        max-width: 25rem;
+    }
+    
+    .plan-highlighted{
+        color: white;
+        background: #175c29;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    .good-reason{
+        display: inline-block;
+        width: 30%;
+        max-width: 25rem;
+        min-width: 10rem;
+        /* vertical-align: top; */
+    }
+    
+
+} 
